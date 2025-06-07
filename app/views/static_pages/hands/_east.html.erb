@@ -1,0 +1,18 @@
+<div class ="d-flex flex-column hand-E ms-auto">
+  <% @east.group_by_suit.each do |suit_group| %>
+     <div class ="d-flex">
+       <% suit_group.each do |c| %>
+         <div class="kard-container"> <%= image_tag( "#{c.to_s}.png", class: 'kard') %> </div>
+       <% end %>
+     </div>
+  <% end %>
+</div>
+
+<div>
+  <div class ="we-hand-summary mt-1">
+    <span class="pr-2"><%= "#{@east.distribution_summary}" %> </span>
+  </div>
+  <div class ="we-hand-summary mt-1">
+    <span class="points"><%= @east.points %></span>
+  </div>
+</div>

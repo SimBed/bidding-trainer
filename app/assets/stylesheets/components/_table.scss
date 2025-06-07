@@ -1,0 +1,208 @@
+
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+body {
+  background-color: #003300;
+}
+
+// .convention_form_container *:not(:last-child) {
+//   margin-right: 1em;
+// }
+
+.convention_form_container input {
+  box-shadow: -3px 3px black, -2px 2px black, -1px 1px black;
+}
+
+// .deal_btn_container {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   margin-top: 1em;
+//   margin-bottom: 1em;
+// }
+
+// .deal_btn_container a:first-child {
+// margin-right: 1em;
+// }
+
+.baize {
+  padding-left: 7em;
+  padding-right: 7em;
+}
+
+div.hand-NS {
+  justify-content: center;
+  margin-left: -4.5em;
+  }
+
+.hand-W {
+  margin-left: 2%;
+}
+
+.hand-E {
+  margin-right: 1%;
+}
+
+div.hand-WE {
+margin-top: -1.5em;
+margin-bottom: -1.5em;
+}
+
+img.kard {
+  width: 8rem;
+  height: auto;
+}
+
+div.hand-W .kard-container, div.hand-E .kard-container {
+  margin-right: -6em;
+  margin-top: -8em;
+  }
+
+div.hand-E .kard-container:last-child {
+  margin-right: 0;
+  }
+
+div.hand-W div:first-child .kard-container, div.hand-E div:first-child .kard-container {
+  margin-top: 0;
+}
+
+div.hand-NS .kard-container {
+  margin-right: -5em;
+  }
+
+div.ns-hand-summary {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+div.ns-hand-summary span {
+  color: white;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.points {
+  border-radius: 50%;
+  background-color: black
+}
+
+div.south-summary {
+  margin-top: -5em;
+}
+
+div.we-hand-summary {
+  font-size: 1.5em;
+}
+div.we-hand-summary span {
+  color: white;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.deal_btn {
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  padding-left:  0.2em;
+  padding-right: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+@media (max-width: 1120px) {
+
+  .baize {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  div.hand-WE {
+  margin-top: -1em;
+  margin-bottom: -1em;
+  }
+  img.kard {
+    width: 7rem;
+    height: auto;
+  }
+
+  div.ns-hand-summary {
+    font-size: 1.2em;
+  }
+  div.south-summary {
+    margin-top: -3em;
+  }
+  div.we-hand-summary {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 810px) {
+  div.hand-WE {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  }
+  img.kard {
+    width: 6rem;
+    height: auto;
+  }
+  div.hand-W .kard-container, div.hand-E .kard-container {
+    margin-right: -5em;
+    margin-top: -6em;
+    }
+  div.hand-NS .kard-container {
+    margin-right: -4.5em;
+    }
+  div.ns-hand-summary {
+    font-size: 1.0em;
+  }
+
+  div.s-hand-summary {
+    display: none;
+    font-size: 1.0em;
+  }
+
+  div.we-hand-summary {
+    display: none;
+    font-size: 1.0em;
+  }
+  div.south-summary {
+    margin-top: 1em;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .baize {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  div.hand-NS {
+    justify-content: flex-start;
+    margin-left: 1em;
+  }
+  div.hand-WE {
+  margin-top: 1em;
+  }
+  img.kard {
+    width: 4rem;
+    height: auto;
+  }
+  div.hand-W .kard-container, div.hand-E .kard-container {
+    margin-right: -3em;
+    margin-top: -4em;
+    }
+  div.hand-NS .kard-container {
+    margin-right: -3em;
+    }
+
+  div.south-summary {
+    margin-top: 1em;
+  }
+
+}
+
+@media (max-width: 330px) {
+  .convention_label {
+    display: none;
+  }
+}

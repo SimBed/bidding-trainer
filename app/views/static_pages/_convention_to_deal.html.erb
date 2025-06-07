@@ -1,0 +1,12 @@
+<!--default for form_with is documented as remote = true (ie ajax) but this doesn't seem to be so, hence explicit 'local:false'
+subsequently didn't use ajax so back to local:true-->
+<div class="convention_form_container container text-center my-3">
+<%= form_with url: "/static_pages", method: :get, local: true do |form| %>
+  <%= form.label :convention, 'Convention:',{class: "convention_label text-white p-1 me-1"}  %>
+    <!-- from https://apidock.com/rails/ActionView/Helpers/FormOptionsHelper/select
+    select(object, method, choices = nil, options = {}, html_options = {}, &block)
+    last two options must be in curly braces, otherwise onchange doesn't get implemented-->
+  <%= form.select :convention, [['Cappelletti', 'cappelletti'], ['Blackout', 'blackout'], ['DONT', 'dont'],['Muiderberg', 'muiderberg'], ['Multi2D', 'multi2d'], ['Stayman', 'stayman'], ['Garbage Stayman', 'garbage_stayman'],  ['Smolen', 'smolen'], ['Weak 2s', 'weak2_defense']], { selected: session[:convention] || 'multi2d'}, {class: "text-white bg-dark p-1 me-3", onchange: "this.form.submit();" }  %>
+  <%= form.submit 'DEAL', {class: "deal_btn btn-secondary btn text-white bg-dark"} %>
+<% end %>
+</div>

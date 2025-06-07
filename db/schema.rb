@@ -1,0 +1,1 @@
+# not using database, but want empty schema to avoid triggering migration errors

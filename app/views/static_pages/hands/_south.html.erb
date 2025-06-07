@@ -1,0 +1,10 @@
+<div class ="s-hand-summary ns-hand-summary">
+  <span class="pr-2"><%= "#{@south.distribution_summary}" %> </span>
+  <span class="points"><%= @south.points %></span>
+</div>
+
+<div class ="d-flex hand-NS mt-1">
+  <% @south.in_order.cards.each do |c| %>
+      <div class="kard-container"><%= image_tag( "#{c.to_s}.png", class: 'kard') %></div>
+  <% end %>
+</div>
